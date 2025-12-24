@@ -1,18 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
 body {
     background: linear-gradient(to top,rgb(26, 74, 26), rgb(106, 156, 31));
     color: #3333339d;
 }
-
-/* ================= HEADER ================= */
 header {
     position: sticky;
     top: 0;
@@ -24,12 +20,10 @@ header {
     align-items: center;
     padding: 10px 20px;
 }
-
 header h1 {
     color: green;
     font-weight: 700;
 }
-
 header nav a {
     color: green;
     margin-left: 25px;
@@ -37,9 +31,7 @@ header nav a {
     font-weight: 500;
     position: relative;
 }
-
 header nav a::after {
-    content: '';
     width: 0;
     height: 2px;
     background: #fff;
@@ -48,12 +40,9 @@ header nav a::after {
     left: 0;
     transition: 0.3s;
 }
-
 header nav a:hover::after {
     width: 100%;
 }
-
-/* ================= HERO ================= */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -65,18 +54,15 @@ header nav a:hover::after {
     color: wheat;
     animation: fadeIn 1.5s ease-in;
 }
-
 .hero h2 {
     font-size: 3rem;
     margin-bottom: 15px;
 }
-
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 30px;
     opacity: 0.9;
 }
-
 .hero button {
     padding: 14px 35px;
     font-size: 1rem;
@@ -87,30 +73,24 @@ header nav a:hover::after {
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
 }
-
 .hero button:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 30px rgba(0,0,0,0.3);
 }
-
-/* ================= FEATURES ================= */
 .features {
     background: linear-gradient(rgb(185, 244, 185) ,white);
     padding: 80px 40px;
     text-align: center;
 }
-
 .features h2 {
     font-size: 2.5rem;
     margin-bottom: 50px;
 }
-
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
 }
-
 .card {
     background: rgba(255, 255, 255, 0.936);
     backdrop-filter: blur(10px);
@@ -121,25 +101,19 @@ header nav a:hover::after {
     font-size: 1.1rem;
     font-weight: 500;
 }
-
 .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(0,0,0,0.2);
 }
-
-/* ================= CONTACT ================= */
 .contact {
     padding: 80px 40px;
     text-align: center;
     color: white;
-   
 }
-
 .contact h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
 }
-
 .contact input {
     width: 300px;
     max-width: 90%;
@@ -149,7 +123,6 @@ header nav a:hover::after {
     border-radius: 30px;
     outline: none;
 }
-
 .contact button {
     padding: 14px 40px;
     background: linear-gradient(45deg, #b5fa62, #0072ff);
@@ -160,20 +133,15 @@ header nav a:hover::after {
     margin-top: 15px;
     transition: 0.3s;
 }
-
 .contact button:hover {
     transform: scale(1.05);
 }
-
-/* ================= FOOTER ================= */
 footer {
     background: #111;
     color: white;
     padding: 15px;
     text-align: center;
 }
-
-/* ================= ANIMATIONS ================= */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -184,17 +152,13 @@ footer {
         transform: translateY(0);
     }
 }
-
-/* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
     }
-
     header nav {
         margin-top: 10px;
     }
-
     .hero h2 {
         font-size: 2.2rem;
     }
